@@ -15,7 +15,7 @@ DEBIAN_FRONTEND=noninteractive apt -y upgrade
 
 # installing openjdk8.
 # maven3.3+ require jdk1.7+
-apt install -y openjdk-8-jdk maven
+apt install -y openjdk-8-jdk
 
 # creating a deployable JAR file.
 mvn -f $HOME/genfakedata/pom.xml clean package
