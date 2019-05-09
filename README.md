@@ -1,5 +1,5 @@
 # generate student fake exam results
-## openjdk8-jdk, maven.
+## openjdk-8-jdk, maven.
 ### Author: BALAJI POTHULA <*balaji.pothula@techie.com*>
 
 #### cloning genfakedata from github.
