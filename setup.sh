@@ -7,9 +7,6 @@
 
 # Note: Please run this script with sudo privilage.
 
-# setting maven version.
-readonly MVN_VER=3.6.1
-
 # updating packages index.
 apt update
 
