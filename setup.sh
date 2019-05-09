@@ -20,4 +20,14 @@ DEBIAN_FRONTEND=noninteractive apt -y upgrade
 # maven3.3+ require jdk1.7+
 apt install -y openjdk-8-jdk
 
-cd $HOME && wget http://mirrors.estointernet.in/apache/maven/maven-3/$MVN_VER/binaries/apache-maven-$MVN_VER-bin.tar.gz && tar xzf apache-maven-$MVN_VER-bin.tar.gz && rm apache-maven-$MVN_VER-bin.tar.gz && mv apache-maven-$MVN_VER mvn && export PATH=$PATH:$HOME/mvn/bin
+# downloading and extracting maven.
+cd $HOME && wget http://mirrors.estointernet.in/apache/maven/maven-3/$MVN_VER/binaries/apache-maven-$MVN_VER-bin.tar.gz && tar xzf apache-maven-$MVN_VER-bin.tar.gz && rm apache-maven-$MVN_VER-bin.tar.gz && mv apache-maven-$MVN_VER mvn
+
+# setting maven path.
+echo "PATH=$PATH:$HOME/mvn/bin" >> $HOME/.bashrc && source $HOME/.bashrc
+
+# creating a deployable JAR file.
+mvn -f $HOME/genfakedata/pom.xml clean package
+
+# running JAR file.
+java -jar $HOME/genfakedata/target/genfakedata-1.0.0-jar-with-dependencies.jar
