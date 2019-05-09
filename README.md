@@ -2,7 +2,7 @@
 ## openjdk8-jdk, maven.
 ### Author: BALAJI POTHULA <*balaji.pothula@techie.com*>
 
-#### cloning tomcat-8.5.40 from github.
+#### cloning genfakedata from github.
 git clone https://github.com/balajipothula/genfakedata.git
 
 ##### maven setup and building project.
