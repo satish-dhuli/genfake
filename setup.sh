@@ -29,5 +29,5 @@ cd $HOME                                                                        
 # creating a deployable JAR file.
 mvn -f $HOME/genfakedata/pom.xml clean package
 
-# running JAR file.
-java -jar $HOME/genfakedata/target/genfakedata-1.0.0-jar-with-dependencies.jar
+# Uncomment below line to run JAR file.
+##java -jar $HOME/genfakedata.jar
