@@ -1,4 +1,4 @@
-# generate student fake exam results
+# generating student fake exam results.
 ## openjdk-8-jdk, maven.
 ### Author: BALAJI POTHULA <*balaji.pothula@techie.com*>
 
